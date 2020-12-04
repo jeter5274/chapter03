@@ -1,4 +1,4 @@
-package com.javaex.ex02;
+package com.javaex.ex03;
 
 public class Point {
 
@@ -36,10 +36,34 @@ public class Point {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 	
+	
 	/*
 	//주소값 대용, 변경해서 사용할 수 있다.
 	public int hashCode() {
 		return 100;
 	}
 	*/
+	
+	//Point의 '같다'를 재정의 한 것
+	@Override
+	public boolean equals(Object obj) {
+		
+		Point target = (Point)obj;
+		
+		if(this.x == target.x && this.y == target.y) {
+			return true;
+		}else {
+			return false;
+		}
+		
+		/*
+		if(this.x == ((Point)obj).x && this.y == ((Point)obj).y) {
+			return true;
+		}else {
+			return false;
+		}
+		*/
+		
+	}
+	
 }
