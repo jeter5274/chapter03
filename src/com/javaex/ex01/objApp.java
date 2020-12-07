@@ -11,7 +11,7 @@ public class objApp {
 		System.out.println(obj.toString());
 		System.out.println(obj.equals(obj));
 		
-		//getClass() -> 클래스 정보
+		//getClass() -> 
 		System.out.println("=========================");
 		System.out.println("obj.getClass()");
 		System.out.println(obj.getClass());
